@@ -3,14 +3,17 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+#IfWinActive ahk_class SunAwtFrame
 ^.::
 Send, for(int i=0; i<holdword; i++){}
 return
 
+#IfWinActive ahk_class SunAwtFrame
 ^/::
 Send, System.out.println();
 return
 
+#IfWinActive ahk_class SunAwtFrame
 ^,::
 Send, public static void main(String[] args) {}
 return
