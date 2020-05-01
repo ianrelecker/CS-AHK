@@ -8,8 +8,9 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 Send, for(int i=0; i<holdword; i++){}
 return
 
+;changed from ^/ to allow for shortcut for comment
 #IfWinActive ahk_class SunAwtFrame
-^/::
+^'::
 Send, System.out.println();
 return
 
