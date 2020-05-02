@@ -27,3 +27,8 @@ return
 Send, {{}
 return
 
+
+#IfWinActive ahk_class SunAwtFrame
+!/::
+Send, {}}
+return
