@@ -13,7 +13,7 @@ return
 
 #IfWinActive ahk_class SunAwtFrame
 ^,::
-Send, public static void main(String[] args) {{}}
+Send, public static holdclass() {{}}
 return
 
 #IfWinActive ahk_class SunAwtFrame
