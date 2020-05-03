@@ -25,13 +25,16 @@ return
 Send, {{}
 return
 
-
 !/::
 Send, {}}
 return
 
-
 #IfWinActive ahk_exe devenv.exe
 ^'::
 Send, Console.WriteLine();
+return
+
+#IfWinActive ahk_exe devenv.exe
+^+.::
+Send, foreach (int i in holdlist) {{}}
 return
