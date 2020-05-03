@@ -2,7 +2,6 @@
 ;ianrelecker@gmail.com
 ;www.ianrelecker.com
 
-#IfWinActive ahk_class SunAwtFrame
 ^.::
 Send, for(int i=0; i<holdword; i){{}}
 return
@@ -22,13 +21,17 @@ return
 Send, (
 return
 
-#IfWinActive ahk_class SunAwtFrame
 !.::
 Send, {{}
 return
 
 
-#IfWinActive ahk_class SunAwtFrame
 !/::
 Send, {}}
+return
+
+
+#IfWinActive ahk_exe devenv.exe
+^'::
+Send, Console.WriteLine();
 return
