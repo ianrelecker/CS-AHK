@@ -11,7 +11,7 @@ return
 Send, System.out.println();
 return
 
-#IfWinActive ahk_exe Code.exe
+#IfWinActive ahk_class Chrome_WidgetWin_1
 ^'::
 Send, document.write();
 return
@@ -26,16 +26,8 @@ return
 Send, (
 return
 
-!.::
-Send, {{}
-return
-
-!/::
-Send, {}}
-return
-
-#IfWinActive ahk_exe devenv.exe
-^'::
+#IfWinActive ahk_class Chrome_WidgetWin_1
+^;::
 Send, Console.WriteLine();
 return
 
