@@ -11,6 +11,11 @@ return
 Send, System.out.println();
 return
 
+#IfWinActive ahk_exe Code.exe
+^'::
+Send, document.write();
+return
+
 #IfWinActive ahk_class SunAwtFrame
 ^,::
 Send, public static holdclass() {{}}
