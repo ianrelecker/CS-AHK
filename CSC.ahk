@@ -26,6 +26,11 @@ return
 Send, (
 return
 
+#IfWinActive ahk_class SunAwtFrame
+!.::
+Send, {{}{}}
+return
+
 #IfWinActive ahk_class Chrome_WidgetWin_1
 ^;::
 Send, Console.WriteLine();
