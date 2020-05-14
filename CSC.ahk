@@ -10,6 +10,7 @@ Click, %varForX% %varFory%
 Click, %varForX% %varFory%
 return
 
+#IfWinActive ahk_class SunAwtFrame
 ^.::
 Send, for(int i=0; i<holdword; i){{}}
 return
