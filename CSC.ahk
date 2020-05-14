@@ -16,14 +16,8 @@ return
 Send, document.write();
 return
 
-#IfWinActive ahk_class SunAwtFrame
 ^,::
-Send, public static holdclass() {{}}
-return
-
-#IfWinActive ahk_class SunAwtFrame
-!,::
-Send, (
+Send, ()
 return
 
 #IfWinActive ahk_class SunAwtFrame
