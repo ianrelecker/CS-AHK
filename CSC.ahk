@@ -10,12 +10,16 @@ Click, %varForX% %varFory%
 Click, %varForX% %varFory%
 return
 
-#IfWinActive ahk_class SunAwtFrame
+#IfWinActive ahk_pid 16416
+F7::
+Send !{Enter}
+
+#IfWinActive ahk_exe idea64.exe
 ^.::
 Send, for(int i=0; i<holdword; i){{}}
 return
 
-#IfWinActive ahk_class SunAwtFrame
+#IfWinActive ahk_exe idea64.exe
 ^'::
 Send, System.out.println();
 return
@@ -37,9 +41,4 @@ return
 #IfWinActive ahk_class Chrome_WidgetWin_1
 ^;::
 Send, Console.WriteLine();
-return
-
-#IfWinActive ahk_exe devenv.exe
-^+.::
-Send, foreach (int i in holdlist) {{}}
 return
