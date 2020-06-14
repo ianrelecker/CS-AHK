@@ -10,7 +10,7 @@ Click, %varForX% %varFory%
 Click, %varForX% %varFory%
 return
 
-#IfWinActive ahk_pid 16416
+
 F7::
 Send !{Enter}
 
